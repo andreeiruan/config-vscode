@@ -1,0 +1,15 @@
+[
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "editor.action.addCommentLine"    
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "editor.action.removeCommentLine",
+    "when": "editorTextFocus"
+  }
+]

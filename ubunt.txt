@@ -1,0 +1,35 @@
+# Google Chorme
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome-stable_current_amd64.deb
+# VsCOde
+sudo snap install --classic code
+# Git
+sudo apt update
+sudo apt install git
+# curl
+sudo apt install curl
+# Oh-My-szh
+sudo apt install zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo apt-get install dconf-cli
+Git clone https://github.com/dracula/gnome-terminal
+cd gnome-terminal
+./install.sh
+#Node version 12
+sudo apt update
+sudo apt -y upgrade
+sudo apt update
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt -y install nodejs
+sudo apt -y  install gcc g++ make
+#discord
+sudo snap install discord
+# spotify
+sudo snap install spotify
+# PGAdmin
+curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+sudo apt install pgadmin4
+sudo /usr/pgadmin4/bin/setup-web.sh
