@@ -1,5 +1,5 @@
 {
-    "terminal.integrated.fontSize": 12,
+    "terminal.integrated.fontSize": 14,
   
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "newUntitledFile",
@@ -52,7 +52,7 @@
   
     "git.enableSmartCommit": true,    
   
-    "typescript.tsserver.log": "verbose",
+    "typescript.tsserver.log": "off",
     "javascript.suggest.autoImports": true,
     "typescript.suggest.autoImports": true,
     "liveServer.settings.donotShowInfoMsg": true,
@@ -116,5 +116,11 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.defaultInterpreterPath": "/bin/python3",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "git.confirmSync": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "redhat.telemetry.enabled": true,
   
   }
