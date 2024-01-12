@@ -1,120 +1,106 @@
 {
-    "terminal.integrated.fontSize": 14,
-  
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "newUntitledFile",
-  
-    "editor.tabSize": 2,
-    "editor.fontSize": 14,
-    "editor.lineHeight": 20,
-    "editor.fontFamily": "Fira Code",
-    "editor.fontLigatures": true,
-  
-    "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/CVS": true,
-      "**/.DS_Store": true,
-      "node_modules": false
-    },
-  
-    "explorer.compactFolders": false,
-    "editor.renderLineHighlight": "gutter",
-    "workbench.editor.labelFormat": "short",
-    "extensions.ignoreRecommendations": true,
-  
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "typescript.updateImportsOnFileMove.enabled": "never",
-  
-    "breadcrumbs.enabled": true,
-    "editor.parameterHints.enabled": false,
-    "explorer.confirmDragAndDrop": false,
-    "explorer.confirmDelete": false,
-    
-    "editor.rulers": [80, 120],
-    
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
-    },
-  
-    "files.associations": {
-      ".sequelizerc": "javascript",
-      ".stylelintrc": "json",
-      ".prettierrc": "json"
-    },
-  
-    "emmet.syntaxProfiles": { "javascript": "jsx" },  
-    
-    "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.enabled": false,
-  
-    "git.enableSmartCommit": true,    
-  
-    "typescript.tsserver.log": "off",
-    "javascript.suggest.autoImports": true,
-    "typescript.suggest.autoImports": true,
-    "liveServer.settings.donotShowInfoMsg": true,
-    // "material-icon-theme.activeIconPack": "nest",
-    "screencastMode.onlyKeyboardShortcuts": true,
-  
-    "material-icon-theme.folders.associations": {
-      "infra": "app",
-      "entities": "class",
-      "schemas": "class",
-      "typeorm": "database",
-      "repositories": "mappings",
-      "http": "container",
-      "migrations": "tools",
-      "modules": "components",
-      "implementations": "core",
-      "dtos": "typescript",
-      "fakes": "mock",
-      "websockets": "pipe",
-      "protos": "pipe",
-      "grpc": "pipe",
-      "useCases": "Job",
-    },
-  
-    "material-icon-theme.files.associations": {
-      "ormconfig.json": "database",
-      "tsconfig.json": "tune",
-      "*.proto": "3d"
-    },
-  
-  "editor.formatOnSave": false,
-  "eslint.packageManager": "yarn",
-  "[javascript]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-    }
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 16,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.selectionClipboard": false,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "node_modules": false
   },
+  "explorer.compactFolders": false,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "boundary",
+  "workbench.editor.labelFormat": "short",
+  "extensions.ignoreRecommendations": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // "typescript.updateImportsOnFileMove.enabled": "always",
+  // "typescript.format.semicolons": "remove",  
+  "breadcrumbs.enabled": true,
+  "editor.parameterHints.enabled": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "editor.rulers": [
+    100,
+    120
+  ],
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true
+  // },
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx"
+  },
+  "gitlens.codeLens.recentChange.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "git.enableSmartCommit": true,
+  "typescript.tsserver.log": "off",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "screencastMode.onlyKeyboardShortcuts": true,
+  "material-icon-theme.folders.associations": {
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "websockets": "pipe",
+    "protos": "pipe",
+    "grpc": "pipe",
+    "useCases": "Job"
+  },
+  "material-icon-theme.files.associations": {
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune",
+    "*.proto": "3d"
+  },
+  // "editor.formatOnSave": true,  
+  // "[javascript]": {
+  //   "editor.codeActionsOnSave": {
+  //     "source.fixAll.eslint": true
+  //   },
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
   "[javascriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
+      "source.fixAll.eslint": true
     }
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-    }
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
+      "source.fixAll.eslint": true
     }
   },
-  "workbench.activityBar.visible": true,
   "css.remoteStyleSheets": [
     "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
   ],
-  "powermode.enabled": true,
-  "powermode.presets": "flames",
-  "workbench.colorTheme": "Dracula",
   "python.pythonPath": "/bin/python3",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "python.defaultInterpreterPath": "/bin/python3",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "git.confirmSync": false,
@@ -122,5 +108,67 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
   "redhat.telemetry.enabled": true,
-  
-  }
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": true,
+    "plaintext": false,
+    "markdown": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "todo-tree.highlights.defaultHighlight": {
+    "icon": "alert",
+    "type": "text",
+    "foreground": "white",
+    "background": "red",
+    "opacity": 50,
+    "iconColour": "blue"
+  },
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "line",
+      "iconColour": "violet"
+    },
+    "FIXME": {
+      "foreground": "black",
+      "iconColour": "yellow",
+      "gutterIcon": true
+    }
+  },
+  "console-ninja.featureSet": "Community",
+  "console-ninja.captureFunctions": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "github-actions.org-features": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.minimap.enabled": false,
+  "terminal.integrated.env.linux": {},
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.formatOnSave": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "debug.onTaskErrors": "showErrors",
+  "sonarlint.pathToNodeExecutable": "/home/arua/.nvm/versions/node/v20.9.0/bin/node",
+  "[javascriptreact][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+}
